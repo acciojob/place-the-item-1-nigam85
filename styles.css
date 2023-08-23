@@ -1,2 +1,23 @@
+.holder {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: space-between; /* Distribute items along the row with space */
+}
 
-/* Your CSS Code here. */
+.item {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    flex: 0 0 calc(25% - 10px); /* Distribute items equally within the row */
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.item:first-child {
+    margin-left: 0; /* Remove margin on the first item */
+}
+
+.item:last-child {
+    margin-right: 0; /* Remove margin on the last item */
+}
+
